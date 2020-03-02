@@ -1,0 +1,74 @@
+.funding-info-section {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 3.125em;
+    padding-right: 3.125em; 
+    border-right: 1px solid #1C847C;
+    justify-items: center;   
+}
+
+.funding-info-section:last-of-type {
+    border-right: none;
+}
+
+.funding-info-section h1 {
+    line-height: normal;
+    clear: both;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    color: #076168;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .funding-info-section {
+        width: 100%;
+        background: #E6E7E8;
+        border: none;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    .funding-info-section:nth-child(2n+1) {
+        background: white;
+    }
+
+    .funding-info-section h1 {
+        line-height: normal;
+        box-sizing: border-box;
+        padding: 0;
+        border: 0;
+        list-style: none;
+        clear: both;
+        margin: 0 0 .4em 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: normal;
+        color: #076168;
+        font-size: 1.5rem;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .funding-info-section {
+        width: 100%;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .funding-info-section h1 {
+        line-height: normal;
+        box-sizing: border-box;
+        padding: 0;
+        border: 0;
+        list-style: none;
+        clear: both;
+        margin: 0 0 .4em 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: normal;
+        color: #076168;
+        font-size: 1.2rem;
+        text-align: left;
+    }
+}

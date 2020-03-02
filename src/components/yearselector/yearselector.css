@@ -1,0 +1,76 @@
+.year-selector {
+    display: flex;
+    flex-direction: row;
+    font-family: "OpenSans";
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    font-size: 100%;
+    list-style: none;
+    justify-content: flex-end;
+    line-height: normal;
+    padding-left: 3.125em;
+    padding-right: 3.125em;
+    padding-top: 3.125em;
+    padding-bottom: 3.125em;
+    color: #fff;
+    position: relative;
+    background: linear-gradient(to right, #df9226 0%, rgba(251, 174, 43, 0.8) 50%, rgba(251, 174, 43, 0.6) 100%);
+}
+
+.year-selector select {
+    font-family: "OpenSans";
+    color: #000;
+    line-height: 1.5;
+    box-sizing: border-box;
+    margin: 0;
+    list-style: none;
+    font-size: 1em;
+    padding: 0.25em 3em 0.25em 1em;
+    border: 1px solid #ccc;
+    position: relative;
+    display: inline-block;
+    background: #fff;
+    cursor: pointer;
+    width: 16em;
+    text-align: left;
+}
+
+.year-selector span {
+    font-family: "OpenSans";
+    color: #000;
+    line-height: 1.5;
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    list-style: none;
+    font-size: 1em;
+    display: inline-block;
+    padding: 0 .5em 0 0;
+    font-weight: normal;
+}
+
+@media (max-width:768px) {
+    .year-selector {
+        flex-direction: column;
+        justify-content: flex-start;       
+        width: 100%;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-left: 2em;
+        padding-right: 2em;
+        background: #1C847C;
+    }
+    
+    .year-selector select {
+        width:100%;
+        text-align: left;
+        font-size: 1.1em;
+    }
+    
+    .year-selector span {
+        width: 100%;    
+        font-size: 1.1em;
+        color: #fff;
+    }  
+}

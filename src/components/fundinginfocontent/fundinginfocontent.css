@@ -1,0 +1,139 @@
+.funding-info-content, .funding-info-content-inner {
+    position: relative;
+    min-height: 120px;
+}
+
+.funding-info-content {
+    background: transparent;
+}
+
+.funding-info-content .dollars, 
+.funding-info-content .grants,
+.funding-info-content .year {
+    color: rgb(7,94,104);
+    font-size: 2.0em;
+    text-align: center;
+}
+
+.funding-info-content .year {
+    color: black;
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+.funding-info-content .dollars, 
+.funding-info-content .year {
+    font-weight: bold;
+}
+
+.funding-info-content .year-info {
+    font-family: "OpenSans";
+    color: #000;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    margin: 1em 0;
+    font-size: 1em;
+    line-height: 2;
+    margin-top: 0;
+    text-align: left;
+}
+
+.funding-info-content ol {
+    list-style-type:decimal;
+    list-style-position:inside;
+    font-size: 1em;
+    font-family: "OpenSans";
+}
+
+.funding-info-content li {
+    margin: 0 0 .5em;
+    padding: 0;
+}
+
+.funding-info-content li .funder-amount {
+    font-weight: bolder;
+    float: right;
+}
+
+.funding-info-content li .funder-name {
+    width: 73%;
+    display: inline-block;
+}
+
+.funding-info-content li .funder-name,  
+.funding-info-content li .funder-amount {
+    font-size: .8em;
+}
+
+/* more button */
+.more-state {
+    display: none;
+}
+
+li.more-target {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: .25s ease;
+    padding: 0;
+    margin: 0;
+}
+
+.more-state:checked ~ .more-wrap .more-target {
+    opacity: 1;
+    font-size: inherit;
+    max-height: 999em;
+    margin: 0 0 .5em;
+}
+
+.more-state ~ .more-trigger:before {
+    content: '+ More';
+}
+
+.more-state:checked ~ .more-trigger:before {
+    content: '- Less';
+}
+  
+.more-trigger {
+    cursor: pointer;
+    display: block;
+    padding: 0 .5em;
+    font-weight: bolder;   
+    float: right;
+    line-height: 2;
+    text-align: right;
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    list-style: none;
+    transition: opacity ease 0.5s;
+    display: inline-block;
+    text-decoration: none;
+    background: transparent;
+    font-size: .938em;
+    font-family: "OpenSans Bold";
+    padding: 0;
+    color: #1C847C;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .funding-info-content .dollars, 
+    .funding-info-content .grants{
+        font-size: 1.0em;
+    }
+
+    .funding-info-content .year-info {
+        font-size: .5em;
+        margin: .5em 0;
+    }
+
+    .funding-info-content .year {
+        font-weight: bold;
+        font-size: .8em;
+    }
+}

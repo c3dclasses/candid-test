@@ -1,0 +1,17 @@
+.funding-info-sections {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    padding-top: 3.125em;
+    padding-bottom: 3.125em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width: 768px) {
+    .funding-info-sections {
+        flex-direction: column;
+        padding: 0;
+        grid-template-columns: 1fr;
+    }
+}
